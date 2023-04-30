@@ -2,11 +2,9 @@ assert(Drawing, "missing dependency: drawing");
 
 --Script made by mickey and UncleRon(4M6D)
 
---//Toggles go wicked
+--//Checking to see if there is already settings
 if TeamCheck == false then
-    
     else if TeamCheck == true then
-        
         else
         _G.TeamCheck = false
         _G.BoxEspI = false
@@ -14,9 +12,9 @@ if TeamCheck == false then
         _G.SkeletonEspI = true
         _G.NameEspI = false
         _G.TracerEspI = false
-        _G.SkeletonEspColor = Color3.new(1,1,1)
-        _G.BoxEspColor = Color3.new(1,0,0)
-        _G.TracerEspColor = Color3.new(0,0,0)
+        _G.SkeletonEspColor = Color3.new(1,0,0)
+        _G.BoxEspColor = Color3.new(1,1,1)
+        _G.TracerEspColor = Color3.new(1,0,0)
         end
 end
 
