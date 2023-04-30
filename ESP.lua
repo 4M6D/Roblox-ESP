@@ -3,6 +3,7 @@ assert(Drawing, "missing dependency: drawing");
 --Script made by mickey and UncleRon(4M6D)
 
 --//Toggles go wicked
+_G.TeamCheck = false
 _G.BoxEspI = false
 _G.DistanceEspI = false
 _G.SkeletonEspI = true
@@ -134,7 +135,7 @@ local function vischeckthing(espc, vis, on)
 local function update_esp()
     for player, esp in next, cache do
         local character = player and player.Character;
-        if character and player.Team ~= localplayer.Team then
+        if character and player.Team ~= localplayer.Team or _G.TeamCheck == false then
             local cframe = get_pivot(character);
             local position, visible = wtvp(camera, cframe.Position);
             
