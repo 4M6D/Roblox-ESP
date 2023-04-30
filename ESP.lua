@@ -8,9 +8,9 @@ if TeamCheck == false then
         else
         _G.TeamCheck = false
         _G.BoxEspI = true
-        _G.DistanceEspI = false
+        _G.DistanceEspI = true
         _G.SkeletonEspI = true
-        _G.NameEspI = false
+        _G.NameEspI = true
         _G.TracerEspI = true
         _G.SkeletonEspColor = Color3.new(1,0,0)
         _G.BoxEspColor = Color3.new(1,1,1)
