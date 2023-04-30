@@ -7,11 +7,11 @@ if TeamCheck == false then
     else if TeamCheck == true then
         else
         _G.TeamCheck = false
-        _G.BoxEspI = false
+        _G.BoxEspI = true
         _G.DistanceEspI = false
         _G.SkeletonEspI = true
         _G.NameEspI = false
-        _G.TracerEspI = false
+        _G.TracerEspI = true
         _G.SkeletonEspColor = Color3.new(1,0,0)
         _G.BoxEspColor = Color3.new(1,1,1)
         _G.TracerEspColor = Color3.new(1,0,0)
