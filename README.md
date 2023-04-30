@@ -6,6 +6,7 @@ Only works with R15
 Usage: 
 
 --//Settings (There are automatic ones if you dont put this)
+
 _G.TeamCheck = false
 _G.BoxEspI = true
 _G.DistanceEspI = true
