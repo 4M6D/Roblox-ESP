@@ -3,13 +3,22 @@ assert(Drawing, "missing dependency: drawing");
 --Script made by mickey and UncleRon(4M6D)
 
 --//Toggles go wicked
-_G.TeamCheck = false
-_G.BoxEspI = false
-_G.DistanceEspI = false
-_G.SkeletonEspI = true
-_G.NameEspI = false
-_G.TracerEspI = false
-_G.SkeletonEspColor = Color3.new(1,1,1)
+if TeamCheck == false then
+    
+    else if TeamCheck == true then
+        
+        else
+        _G.TeamCheck = false
+        _G.BoxEspI = false
+        _G.DistanceEspI = false
+        _G.SkeletonEspI = true
+        _G.NameEspI = false
+        _G.TracerEspI = false
+        _G.SkeletonEspColor = Color3.new(1,1,1)
+        _G.BoxEspColor = Color3.new(1,0,0)
+        _G.TracerEspColor = Color3.new(0,0,0)
+        end
+end
 
 -- services
 local run_service = game:GetService("RunService");
@@ -37,12 +46,12 @@ local function create_esp(player)
     local esp = {};
 
     esp.box = new_drawing("Square", true);
-    esp.box.Color = new_color3(0.3,0.3,0.9);
+    esp.box.Color = _G.BoxEspColor;
     esp.box.Thickness = 1.2;
     esp.box.Filled = false;
     
     esp.tracer = new_drawing("Line", true);
-    esp.tracer.Color = new_color3(1,0,0);
+    esp.tracer.Color = _G.TracerEspColor;
     esp.tracer.Thickness = 1;
 
     esp.name = new_drawing("Text", true);
