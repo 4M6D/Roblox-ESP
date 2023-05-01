@@ -1,4 +1,5 @@
-if _G.LoadedESP == false then
+if _G.LoadedESP == true then
+    else
 assert(Drawing, "missing dependency: drawing");
 
 --Script made by mickey and UncleRon(4M6D)
